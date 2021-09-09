@@ -1,0 +1,10 @@
+class Solution {
+    public int[] runningSum(int[] nums) {
+        int i;
+            for(i=1;i<nums.length;i++) // we are starting the loop from 1 beacuse there is no number before index 0 and -1 will be considered invalid 
+            {
+                nums[i]+=nums[i-1];
+            }
+        return nums;
+    }
+}
